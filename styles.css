@@ -155,3 +155,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
 @media (prefers-reduced-motion:reduce){
   .ticker__t,.wave,.boat,.pulse{animation:none}
 }
+
+.scene__cta{margin:14px 0 0;text-align:center;position:relative;z-index:3}
+@media(max-width:900px){.nav a[href="#form"]{display:none}}
