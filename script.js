@@ -141,6 +141,7 @@ const TG_LINK = 'https://t.me/vbdf555';
       ipo: ['Ипотека на паузе', 'Некоторые застройщики предлагают ипотеку, где платежи начинаются не сразу, например «более двух лет без платежей». Условия у каждого ЖК свои и меняются, поэтому сверим актуальные на момент подбора и покажем, где такое предложение действует.'],
       term: ['Срок сдачи', 'Нужно въехать скоро или это покупка на перспективу? От этого зависит, смотреть дома, которые уже сданы или близки к сдаче, либо ЖК на раннем этапе строительства. Подберём варианты под ваш срок.'],
       budget: ['Бюджет', 'Назовите сумму и размер первоначального взноса, если он есть. Подберём ЖК в этих рамках и посчитаем ежемесячный платёж по ипотеке.'],
+      nofee: ['Ипотека без первоначального взноса', 'Накоплений на взнос нет или их мало? Напишите, какая сумма у вас есть и какой ежемесячный платёж комфортен. Разберём, какие варианты по ипотеке возможны в вашем случае и от чего это зависит, и подберём ЖК под эти условия.'],
       city: ['Я не в Петербурге', 'Вы в Москве, Мурманске, Казани, Волгограде или другом городе? Обсудим формат: что можно решить дистанционно, а что потребует поездки, и спланируем всё так, чтобы лишних шагов было меньше.']
     };
     const svg = $('#pickSvg');
@@ -148,7 +149,8 @@ const TG_LINK = 'https://t.me/vbdf555';
       ipo: '<circle cx="60" cy="60" r="44" fill="none" stroke="#4A86A8" stroke-width="3"/><path d="M60 30v30l20 12" stroke="#16222E" stroke-width="4" stroke-linecap="round" fill="none"/><rect x="44" y="12" width="9" height="22" rx="3" fill="#E2552F"/><rect x="67" y="12" width="9" height="22" rx="3" fill="#E2552F"/>',
       term: '<path d="M14 100h92" stroke="#16222E" stroke-width="4" stroke-linecap="round"/><path d="M26 100V64h28v36M62 100V36h32v64" fill="none" stroke="#4A86A8" stroke-width="3.5" stroke-linejoin="round"/><path d="M70 50h16M70 64h16M70 78h16" stroke="#E2552F" stroke-width="4" stroke-linecap="round"/>',
       budget: '<path d="M14 90h92" stroke="#16222E" stroke-width="4" stroke-linecap="round"/><rect x="24" y="62" width="18" height="28" fill="#4A86A8"/><rect x="51" y="44" width="18" height="46" fill="#4A86A8"/><rect x="78" y="22" width="18" height="68" fill="#E2552F"/>',
-      city: '<path d="M10 90h30M80 90h30" stroke="#16222E" stroke-width="4" stroke-linecap="round"/><path d="M42 90L56 34M78 90L64 34" stroke="#E2552F" stroke-width="4" stroke-linecap="round"/><path d="M10 104c14-8 24 8 38 0s24 8 38 0 14 4 24 0" stroke="#4A86A8" stroke-width="3" fill="none" stroke-linecap="round"/>'
+      city: '<path d="M10 90h30M80 90h30" stroke="#16222E" stroke-width="4" stroke-linecap="round"/><path d="M42 90L56 34M78 90L64 34" stroke="#E2552F" stroke-width="4" stroke-linecap="round"/><path d="M10 104c14-8 24 8 38 0s24 8 38 0 14 4 24 0" stroke="#4A86A8" stroke-width="3" fill="none" stroke-linecap="round"/>',
+      nofee: '<path d="M14 90h92" stroke="#16222E" stroke-width="4" stroke-linecap="round"/><rect x="24" y="62" width="18" height="28" fill="#4A86A8"/><rect x="51" y="44" width="18" height="46" fill="#4A86A8"/><rect x="78" y="22" width="18" height="68" fill="#E2552F"/>'
     };
     const T = $('#pkT'), P = $('#pkP'), body = $('.pick__txt');
     const sel = $('#topic');
